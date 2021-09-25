@@ -1,0 +1,265 @@
+@media screen and (min-width:1400px) {
+    .container{
+        min-width: 1320px;
+    }
+}
+/* transaction */
+.transaction{
+    width: 100%;
+}
+.transaction__item{
+    color: #999999;
+}
+.transaction__confirmation{
+    color:#195F93 ;
+}
+.transaction__item span{
+    font-weight: 400;
+    font-size: 16px;   
+}
+.transaction__item p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 32px;   
+    letter-spacing: 0.02em;   
+}
+.transaction__item .transaction__hr{
+    background: #333333;
+    height: 0.5px;
+}
+.btn-hp > a {
+    color: #fff ;
+}
+.btn-hp > a:hover {
+    color: #fff ;
+    text-decoration: none;
+}
+@media screen and (min-width:576px){
+    .transaction{
+        width: 90%;
+    }
+    .transaction__item span{
+        font-size: 22px;   
+    }
+    .transaction__item p{
+        font-size: 10px;
+    }
+   
+}
+@media screen and (min-width:768px){
+    .transaction{
+        width: 85%;
+    }
+    .transaction__item span{
+        font-size: 26px;   
+    }
+    .transaction__item p{
+        font-size: 14px;
+    }
+    
+}
+@media screen and (min-width:992px){
+    .transaction{
+        width: 70%;
+    }
+    .transaction__item p{
+        font-size: 14px;
+    }
+    .transaction__item .transaction__hr{
+        height: 1px;
+    }
+}
+@media screen and (min-width:1200px){
+    .transaction{
+        width: 65%;
+    }
+    .transaction__item span{
+        font-size: 30px;   
+    }
+    .transaction__item p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:1400px){
+    .transaction__item span{
+        font-weight: 400;
+        font-size: 36px;   
+    }
+    .transaction__item p{
+        font-size: 20px;
+    }
+}
+/* end transaction */
+/* confirmation */
+.confirmation-left p{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+.confirmation-left span{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+.confirmation-left button{
+    font-size: 16px;
+    background: #23538F;;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.confirmation-left button:hover{
+    background: #0E3A5A;
+    color: white;
+}
+.confirmation__timeShip i{
+    color:#0E3A5A;
+    margin-right:15px ;
+    font-size: 16px;
+}
+.confirmation__timeShip span{
+    margin-right:10px ;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+.confirmation__products-name{
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #0E3A5A;
+}
+.confirmation__products-price{
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: rgba(119,119, 119, 1);
+}
+.confirmation__money p{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: #333333;
+}
+.confirmation__grandTotal{
+    border-top: 0.5px solid rgba(112, 112, 112, 0.5);
+    border-bottom: 0.5px solid rgba(112, 112, 112, 0.5);
+}
+.confirmation__grandTotal p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;  
+    letter-spacing: 0.03em;
+    color: #333333;
+
+}
+.confirmation__grandTotal .confirmation__grandTotal-money{
+    font-weight: 600;
+    font-size: 16px; 
+    letter-spacing: 0.03em;
+    color: #333333;
+
+}
+.confirmation__address p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+
+@media screen and (min-width:576px){
+    .confirmation-left p{
+        font-size: 20px;
+    }
+    .confirmation-left span{
+        font-size: 14px;
+    }
+    .confirmation-left button{
+        font-size: 20px;
+    }
+    .confirmation__timeShip i{
+        margin-right:15px ;
+        font-size: 20px;
+    }
+    .confirmation__timeShip span{
+        margin-right:25px ;
+        font-size: 12px;
+    }
+    .confirmation__products-name{
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+    .confirmation__products-price{
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    .confirmation__money p{
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .confirmation__grandTotal p{
+        margin: 0;
+        font-size: 16px;    
+    }
+    .confirmation__grandTotal .confirmation__grandTotal-money{
+        font-size: 20px; 
+    }
+    .confirmation__address p{
+        margin: 0;
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    .confirmation-left p{
+        font-size: 24px;
+    }
+    .confirmation-left span{
+        font-size: 16px;
+    }
+    .confirmation-left button{
+        font-size: 24px;
+    }
+    .confirmation__timeShip i{
+        margin-right:25px ;
+        font-size: 24px;
+    }
+    .confirmation__timeShip span{
+        margin-right:25px ;
+        font-size: 16px;
+    }
+    .confirmation__products-name{
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+    .confirmation__products-price{
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+    .confirmation__money p{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .confirmation__grandTotal p{
+        margin: 0;
+        font-size: 20px;    
+    }
+    .confirmation__grandTotal .confirmation__grandTotal-money{
+        font-size: 24px; 
+    }
+    .confirmation__address p{
+        margin: 0;
+        font-size: 20px;
+    }
+    
+}

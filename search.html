@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/search.css">
+
+    <title>Search</title>
+</head>
+
+<body>
+    <div w3-include-html="./Share/header.html"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="sw">
+                    <input type="" class="search" id="userInputFilterByName" placeholder="SEARCH" />
+
+                    <span onclick="closeInput()" class="material-icons icon-close">
+                        close
+                    </span>
+
+                    <button class="go" onclick="renderBySearch()">
+                        <i class="material-icons" id="searchIcon">
+                            search
+                        </i>
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 text_researcher">
+            <p class="text_recent">Recent Search</p>
+            <div style="height: 200px"></div>
+        </div>
+        <div class="row">
+            <div class="reseutlS">
+
+            </div>
+        </div>
+
+        <div class="notFound">
+            <p>No product finds any of your choice</p>
+        </div>
+
+        <div class="row">
+            <div id="showProducts" class="container">
+
+            </div>
+        </div>
+        <div class="row mt-3 text_suggestions">
+            <p class="text_suggest">Suggestions</p>
+            <a href="detail.html"><span>Mechanical Watch, Metal Strap (RA-NB0101B)</span></a>
+            <a href="detail.html"><span>Mechanical , Metal Strap (RA-AG0029N)</span></a>
+            <a href="detail.html"><span>Quartz , Leather Strap (UG1R002B)</span></a>
+            <a href="detail.html"><span>Mechanical , Leather Strap (AC00009N)</span></a>
+        </div>
+    </div>
+
+    <div w3-include-html="./Share/footer.html"></div>
+
+    <script src="./JS/search.js"></script>
+    <script src="./JS/include.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

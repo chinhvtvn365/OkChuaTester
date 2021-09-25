@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/cart.css">
+
+    <title>Cart</title>
+</head>
+
+<body>
+    <div w3-include-html="./Share/header.html"></div>
+
+    <section class="my-transaction py-3 py-md-4 py-xl-5">
+        <div class="container">
+            <div class="row transaction text-center  mx-auto">
+                <div class="px-1 px-sm-3 col-3 col-sm-3 transaction__checkOut transaction__item">
+                    <span class="material-icons">
+                        add_shopping_cart
+                    </span>
+                    <p>1. Checkout</p>
+                </div>
+                <div class="px-1 px-sm-3 col-5 col-sm-6 transaction__item  mx-auto">
+                    <span class="material-icons">
+                        payment
+                    </span>
+                    <div class=" row align-items-center justify-content-center flex-nowrap ">
+                        <div class="col-2 col-sm-3 transaction__hr"></div>
+                        <p class="px-1 px-sm-3 col-6 col-sm-6">2. Payment</p>
+                        <div class="col-2 col-sm-3 transaction__hr"></div>
+                    </div>
+
+                </div>
+                <div class="px-1 px-sm-3 col-4 col-sm-3 transaction__item">
+                    <span class="material-icons">
+                        description
+                    </span>
+                    <p>3. Confirmation</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="my-card pb-3 pb-md-4 pb-xl-5 ">
+        <div class="container">
+            <div class="cards  mx-auto">
+                <div class="card__more mb-3">
+                    <a href="./product.html">
+                        <span class="mr-2"><</span>
+                         <p class="d-inline-block">Buy more products</p>
+                    </a>
+                </div>
+                <div class="card__items">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <button type="button" class="btn btn-primary btn-showModal d-none" data-toggle="modal" data-target="#exampleModal1">
+        Launch demo modal
+    </button>
+    <div class="modal fade modalConfirm" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body pt-5">
+                    <p class="mb-1">You are about to delete a product</p>
+                    <span>This will delete your product from cart</span>
+                    <div class="text-right mt-4">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-delete ml-3  " data-dismiss="modal" data-toggle="modal"
+                            data-target="#exampleModal2">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modalDeleted" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body position-relative p-4">
+                    <i class="material-icons icon-exit" data-dismiss="modal">
+                        highlight_off
+                    </i>
+                    <p class="mb-2">Successfully Deleted</p>
+                    <span>Done!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <section class="my-address ">
+        <div class="container">
+            <div class="w-75 mx-auto address py-3 py-md-4 py-xl-5">
+                <h3>Billing Address</h3>
+                <form action="/payment.html">
+                    <div class=" form-group ">
+                        <p class="form-text">Fullname</p>
+                        <input type="text" class="form-control" placeholder="Ex: Rasyidin Arsyad Nasution">
+                        <p class="form-text">Email Address</p>
+                        <input type="email" class="form-control" placeholder="Ex: rasyid.arsyad@gmail.com">
+                        <p class="form-text">Phone Number</p>
+                        <input type="text" class="form-control" placeholder="Ex: 089111888999">
+                        <p class="form-text">Phone Number</p>
+                        <input type="text" class="form-control" placeholder="Ex: 089111888999">
+                        <p class="form-text">Province/ City</p>
+                        <div class="position-relative">
+                            <select name="" id="provinces" class="provinces custom-select">
+                            </select>
+                        </div>
+                        <p class="form-text py-2">Dictrict</p>
+                        <select name="" id="dictricts" class="dictricts custom-select">
+                        </select>
+                        <p class="form-text py-2">Ward/ Commune</p>
+                        <select name="" id="wards" class="wards custom-select">
+                        </select>
+                        <p class="form-text py-2">Shipping Address</p>
+                        <input type="text" class="form-control" placeholder="Ex: Patriot Street Number 666">
+                    </div>
+                    <div class="text-center">
+                        <button class="btn form-btn"><a href="./payment.html">Oder Now</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div w3-include-html="./Share/footer.html"></div>
+
+
+    <script src="./JS/include.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+        <script src="./JS/cart.js"></script>
+
+</body>
+
+</html>

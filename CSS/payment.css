@@ -1,0 +1,220 @@
+@media screen and (min-width:1400px) {
+    .container{
+        min-width: 1320px;
+    }
+}
+.transaction{
+    width: 100%;
+}
+.transaction__item{
+    color: #999999;
+}
+.transaction__payment{
+    color:#195F93 ;
+}
+.transaction__item span{
+    font-weight: 400;
+    font-size: 16px;   
+}
+.transaction__item p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 32px;   
+    letter-spacing: 0.02em;   
+}
+.transaction__item .transaction__hr{
+    background: #333333;
+    height: 0.5px;
+}
+.btn-pp > a {
+    color: #fff ;
+}
+.btn-pp > a:hover {
+    color: #fff ;
+    text-decoration: none;
+}
+@media screen and (min-width:576px){
+    .transaction{
+        width: 90%;
+    }
+    .transaction__item span{
+        font-size: 22px;   
+    }
+    .transaction__item p{
+        font-size: 10px;
+    }
+   
+}
+@media screen and (min-width:768px){
+    .transaction{
+        width: 85%;
+    }
+    .transaction__item span{
+        font-size: 26px;   
+    }
+    .transaction__item p{
+        font-size: 14px;
+    }
+    
+}
+@media screen and (min-width:992px){
+    .transaction{
+        width: 70%;
+    }
+    .transaction__item p{
+        font-size: 14px;
+    }
+    .transaction__item .transaction__hr{
+        height: 1px;
+    }
+}
+@media screen and (min-width:1200px){
+    .transaction{
+        width: 65%;
+    }
+    .transaction__item span{
+        font-size: 30px;   
+    }
+    .transaction__item p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:1400px){
+    .transaction__item span{
+        font-weight: 400;
+        font-size: 36px;   
+    }
+    .transaction__item p{
+        font-size: 20px;
+    }
+}
+/* end transaction */
+
+.row #detail-order{
+    background: rgba(159, 159, 159, 0.1);
+    padding:  30px ;
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 15px solid white;
+   
+}
+.row #right-container{
+    background: rgba(159, 159, 159, 0.1);
+    border: 10px solid white;
+    padding: 30px;
+}
+.row #delivery{
+    background: rgba(159, 159, 159, 0.1);
+    border-top: 20px solid white;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+    padding: 30px;
+    line-height: 30px;
+    letter-spacing: 0.02cm;
+}
+.row #payment-method{
+    background: rgba(159, 159, 159, 0.1);
+    border-top: 20px solid white;
+    border-right: 10px solid white;
+    border-bottom: 30px solid white;
+    border-left: 15px solid white;
+    padding: 30px;
+}
+.row .btn-pp{
+    color: #F2F2F2;
+    background-color: #195F93;
+    margin: 10px auto;
+    font-size: 24px;
+}
+.row .btn-pp:hover{
+    color: #F2F2F2;
+    background-color: #0E3A5A;
+    font-weight: 1000px;
+}
+.row h4{
+    color: #195F93;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.row h3{
+    margin-bottom: 40px;
+}
+.row .txt{
+    width: 30px;
+}
+.row .blockquote{
+    font-size: 14px;
+    color: #777777;
+}
+.row .img{
+margin-left: 20px;
+}
+.row .col-6{
+    margin-bottom: 0px;
+}
+.row .shipping{
+    margin-bottom: 0px;
+}
+.row .grand-total{
+    margin-bottom: 0px;
+}
+
+
+@media screen and (max-width:768px) {
+    .row #detail-order{
+        border: 5px solid white;
+    }
+    .row #right-container{
+        border: 20px solid white;
+    }
+    .row #delivery{
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+        border-top: 25px solid white;
+
+    }
+    .row #payment-method{
+        border-left: 20px solid white;
+        border-right: 20px solid white;
+        border-top: 15px solid white;
+        border-bottom: 20px solid white;
+    }  
+    .row .txt{
+        width: 20px;
+    }
+    .row .img{
+        margin-left: 10px;
+    }
+    .row #oub{
+        margin-left: 55px;
+    }
+    .row #standard{
+        margin-left: 55px;
+    }
+    .row .btn-pp{
+        margin: 10px auto;
+        font-size: 18px;
+    }
+    
+}
+@media screen and (max-width:576px) {
+  
+    #right-container, #left-container, #payment-method{
+        font-size: 11.5px;
+    }
+    #right-container h3 , #left-container h3 ,#payment-method h3{
+        font-size: 24px;
+    }
+    #left-container h4{
+        font-size: 16px;
+    }
+    .grand-total{
+        font-size: 16px;
+    }
+    .row .btn-pp{
+        margin: 10px auto;
+        font-size: 14px;
+    }
+ 
+}

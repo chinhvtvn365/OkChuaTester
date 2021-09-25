@@ -1,0 +1,212 @@
+html, body {
+	background: #f2f2f2;
+  }
+
+  .sw {
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 0 0px rgb(23 19 19);
+    margin: 20px auto;
+  }
+
+  .sw .search {
+    flex: 1 1 auto;
+    order: 2;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    background: #fff;
+    padding: 10px;
+    height: 50px;
+    transition: all 0.05s ease-in-out;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(44, 58, 74, 1);
+  }
+  .sw .search:focus {
+    height: 80px;
+    /* margin-left: -15px; 
+    padding: 10px 15px; */
+
+  }
+  .sw .search:focus + .go {
+    height: 80px;
+    /* margin-right: -15px;
+    max-width: 80px; */
+    color:  rgba(0, 0, 0, 1);
+  }
+
+  
+  .sw .go {
+    flex: 1 1 auto;
+    order: 3;
+    max-width: 50px;
+    display: inline-block;
+    border: none;
+    color: #ccc;
+    background: #fff;
+    height: 50px;
+    transition: all 0.05s ease-in-out;
+    font-size: 21px;
+    outline: none;
+  }
+  a:hover{
+    text-decoration: none !important;
+}
+
+.text_suggestions{
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.text_recent, .text_suggest{
+  font-size: 22px;
+  font-weight: 500;
+}
+.text_suggestions > a > span {
+  padding-left: 50px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #2C3A4A;
+  font-size: 20px;
+}
+.text_suggestions > a > span:hover{
+  text-decoration: underline;
+}
+.card{
+  border: 0px !important;
+}
+  .item-zoom {
+    position: relative;
+    overflow: hidden;
+  }
+  .item-zoom img {
+    vertical-align: top;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .item-zoom:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .titleProduct{
+    color: #195F93;
+      margin-top: 20px;
+      font-size: 19px;
+      line-height: 30px;
+      font-weight: 500;
+      min-height: 90px;
+      max-width: 300px;
+  }
+  .titleProduct:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .btnProduct{
+    background: #195F93;
+    color: #fff;
+    width: 128px;
+    height: 42px;
+    border-radius: 5px;
+    border: 0px solid #fff;
+    margin-top: 40px;
+  }
+  .btnProduct > a {
+    color: #fff;
+  }
+  .btnProduct > a:hover{
+    color: #fff;
+  }
+  .button {
+    transition: 0.3s;
+}
+.sw{
+  position: relative;
+}
+.sw #searchIcon {
+  margin: 10px;
+  color:  #0E3A5A;
+  font-size: 30px;
+}
+.sw .icon-close{
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  color:  #0E3A5A;
+  visibility: hidden;
+}
+#userInputFilterByName{
+  padding: 0 9%;
+}
+#userInputFilterByName:focus ~ .icon-close{
+ visibility: visible ;
+}
+.sw .icon-close:hover{
+  visibility: visible;
+  cursor: pointer;
+}
+.button:hover {
+    background-color: rgba(14, 58, 90, 1);
+  }
+.reseutlS{
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 20px;
+}  
+.notFound > p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+.notFound{
+  display: none;
+  margin-top: 100px;
+}
+  @media screen and (max-width:768px){
+    .sw{
+      box-shadow: 0 2px 0 0px rgba(0, 0, 0, 0.1);
+      font-size: 20px;
+    }
+    .sw .search{
+      font-size: 24px;
+    }
+    .sw .icon-close{
+      position: absolute;
+      top: 35%;
+      right: 15%;
+    }
+    .titleProduct{
+      max-width: unset;
+    }
+  }
+
+  @media screen and (max-width:486px) {
+    .sw{
+      position: relative;
+    }
+    .sw .search{
+      width: 50px;
+      font-size: 20px;
+    }
+    .sw .go {
+      position: absolute;
+    }
+    .text_suggestions > a > span {
+      font-size: 12px;
+      padding-left: 20px;
+    }
+    .sw .icon-close{
+      position: absolute;
+      top: 35%;
+      right: 0%;
+    }
+  }

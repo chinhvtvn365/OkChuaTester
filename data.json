@@ -1,0 +1,78 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "mechanical",
+            "codePd": "RA-KAO0002Y",
+            "strap": "Leather",
+            "moventment": "mechanical",
+            "price": 565,
+            "size": 27,
+            "image": "./Assets/productImage/Rec1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "mechanical",
+            "codePd": "RA-AP0004S",
+            "strap": "Leather",
+            "moventment": "mechanical",
+            "price": 627,
+            "size": 32,
+            "image": "./Assets/productImage/Rec2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "mechanical",
+            "codePd": "RA-KAO0002Y",
+            "strap": "Leather",
+            "moventment": "mechanical",
+            "price": 422,
+            "size": 32,
+            "image": "./Assets/productImage/Rec3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "mechanical",
+            "codePd": "RA-KAO0002Y",
+            "strap": "Metal",
+            "moventment": "mechanical",
+            "price": 422,
+            "size": 32,
+            "image": "./Assets/productImage/Rec3.jpg"
+        }
+    ],
+    "Order" : [
+        {   
+            "id": 1,
+            "orderNumber": "TAWEB-3A86D4DB",
+            "orderNumber_sub": "Always remember Order Number for easy tracking",
+            "item1": "Mechanical, Leather, 32.0mm(RA-NB0104S)",
+            "item1_sub": "1 x IDR 1000",
+            "item2": "Mechanical, Leather, 40.5mm(RA-AP0004S)",
+            "item2_sub": "1 x IDR 1200",
+            "name": "Rasyidin Arsyad Nasution",
+            "phone": "+18911188899",
+            "email": "rasyud.arsyad@gmail.com",
+            "address": "18 Richardson Drive Fountain Valley, CA 92708?",
+            "subtotal": 2200,
+            "shippingCost": 50,
+            "packaging": 50
+        },
+        {   
+            "id": 2,
+            "orderNumber": "KJSHA-3A86D4DB",
+            "orderNumber_sub": "Always remember Order Number for easy tracking",
+            "item1": "RA-AP0004S",
+            "item1_sub": "1 x 1200 ",
+            "item2": "Sikka (Ebony & Mapple)",
+            "item2_sub": "1 x IDR 1.264.000",
+            "name": "Rasyidin Arsyad Nasution",
+            "phone": "+6465484654654",
+            "email": "rasyud.arsyad@gmail.com",
+            "address": "18 Hacker Way, CA 92708?",
+            "subtotal": 2200,
+            "shippingCost": 50,
+            "packaging": 50
+        }
+    ]
+}
